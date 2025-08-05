@@ -13,3 +13,7 @@ module "ec2_instance" {
     instance_type_value = "t2.micro"
     subnet_id_value = "subnet-09ce9fea399757fb5"
 }
+
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = "nikhildevops16"
+}
